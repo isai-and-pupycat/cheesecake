@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Space 36 - Bakery</title>
+</head>
+<body>
+
+
+    <!------Barra de navegación------->
+
+    <header>
+        <h2>cheesecake</h2>
+        <nav>   
+            <li><a id="menu" href="#">Home</a></li>
+            <li><a id="menu" href="#pasteles">Pasteles</a></li>
+            <li><a id="menu" href="#adornos">Adornos</a></li>
+            <li><a id="menu" href="#pedido">Realizar Pedido</a></li>
+            <li><a id="menu" href="admin.html">Admin Dashboard</a></li>
+        </nav>
+    </header>
+
+
+    <!------Portada de la pagina------->
+
+    <section class="elementos-pagina">
+        <img src="juniorh.png">
+        <article class="home">
+        
+            <h2>El toque de dulzura que necesitas</h2>
+        </article>
+
+        <!-- <article class="pasteles" id="pasteles">
+            <h2>Pasteles Disponibles</h2>
+            <table>
+                <tr>
+                    <th>
+                        <img id="pastel-img" src="./assets/fresa.jpg" alt="Pastel de fresa">
+                    </th>
+                    <th>
+                        <img id="pastel-img" src="./assets/chocolate.jpg" alt="Pastel de chocolate">
+                    </th>
+                    <th>
+                        <img id="pastel-img" src="./assets/vainilla.jpg" alt="Pastel de vainilla">
+                    </th>
+                    </tr>
+                    <tr>
+                        <td>Pastel de Fresa</td> <td>Pastel de Chocolate</td> <td>Pastel de Vainilla</td>
+                    </tr>
+                    <tr>
+                        <td>Precio: $300</td> <td>Precio: $350</td> <td>Precio: $400</td>
+                </tr>
+            </table>
+        </article> -->
+
+
+        <!------Seccion de los pasteles------->
+
+
+        <article class="pastel-cajas" id="pasteles">
+            <h2>Pasteles</h2>
+            <div id="caja-master">
+                <div id="pastel-info">
+                    <img src="./assets/fresa.jpg" alt="">
+                    <h3>Pastel de Fresa</h3>
+                    <h3>Precio: $300</h3>
+                </div>
+                <div id="pastel-info">
+                    <img src="./assets/chocolate.jpg" alt="">
+                    <h3>Pastel de Chocolate</h3>
+                    <h3>Precio: $350</h3>
+                </div>
+                <div id="pastel-info">
+                    <img src="./assets/vainilla.jpg" alt="">
+                    <h3>Pastel de Vainilla</h3>
+                    <h3>Precio: $400</h3>
+                </div>
+            </div>
+        </article>
+
+        <!------Seccion de los adornos------->
+
+
+        <article class="adornos-pastel" id="adornos">
+            <h2>Adornos</h2>
+            <div id="adornos-master">
+                <div id="adornos-info">
+                    <img src="./assets/velas.jpg" alt="">
+                    <h3>Velas para Pastel</h3>
+                    <h3>Precio: $80</h3>
+                </div>
+                <div id="adornos-info">
+                    <img src="./assets/muñecos.jpeg" alt="">
+                    <h3>Muñecos</h3>
+                    <h3>Precio: $750</h3>
+                </div>
+                <div id="adornos-info">
+                    <img src="./assets/foto-comestible(1).jpg" alt="">
+                    <h3>Imagenes Comestibles</h3>
+                    <h3>Precio: $400</h3>
+                </div>
+            </div>
+        </article>
+
+
+        <!------Seccion de la generacion de pedidos------->
+
+
+        <article class="pedido" id="pedido">
+            <h2>Pedidos</h2>
+            <div class="container-pedido">
+                <img src="./assets/pedido-sin-fondo.png" alt="Pedido">
+
+            <form action="">
+                <h2 id="titulo-form">Generar Orden</h2>
+                <label for="nombre">Nombre</label>
+                <input id="nombre" type="text" placeholder="barahona..." required>
+
+                <label for="telefono">Telefono</label>
+                <input id="telefono" type="tel" placeholder="(000)0000000" maxlength="10" required>
+
+                <label for="email">Email</label>
+                <input id="email" type="text" placeholder="hola@hola.com..." required>
+
+                <label for="especs">Especificaciones de sus pastel</label>
+                <input id="especs" type="text" placeholder="Especificaciones extra en su pedido">
+
+                <h3>Selecciones sus sabores y adornos</h3>
+
+                <label id="lbl-sabor" for="sabor">Sabor de Pastel</label>
+                <select id="sabor" name="sabor">
+                    <option value="default">Seleccione una opción</option>
+                    <option value="fresa">Fresa</option>
+                    <option value="chocolate">Chocolate</option>
+                    <option value="Vainilla">Vainilla</option>
+                    <option value="fresa+choco">50% Fresa + 50% Chocolate</option>
+                    <option value="fresa+vaini">50% Fresa + 50% Vainilla</option>
+                    <option value="choco+vaini">50% Chocolate + 50% Vainilla</option>
+                    <option value="combinado">Tres sabores</option>
+                </select>
+
+                <label id="lbl-adorno" for="adorno">Adorno para su pastel</label>
+                <select id="adorno" name="adorno">
+                    <option value="adorno-opcion">Seleccione una opción</option>
+                    <option value="adorno-opcion">Ninguno</option>
+                    <option value="adorno-opcion">Velas</option>
+                    <option value="adorno-opcion">Muñecos</option>
+                    <option value="adorno-opcion">Impresión Comestible</option>
+                </select>
+
+                <input id="send" type="submit" value="Enviar" onclick="alert('Pedido enviado con exito')">
+                <input id="clear" type="reset" value="Limpiar">
+            </form>
+        </div>
+        </article>
+
+        <!---Info de contacto--->
+
+        <article class="contacto">
+            <h2>Contactanos</h2>
+            <div class="container-contacto">
+                <div id="info-contacto">
+                    <h3><i class="uil-map uil-map-marker"></i> Dirección</h3>
+                    <p>Boulevard  de chetumal. <br>
+                        Horario de atención a clientes: <br>
+                        Lunes a Sábado: 8 a.m. - 8 p.m. <br>
+                        Domingos: 9 a.m. - 8 p.m.
+                    </p>
+                    <br>
+                    <br>
+                    <h3><i class="uil-tel uil-calling"></i> Cotizaciones especiales</h3>
+                    <p>Ventas y cotizaciones:<br>
+                        Lunes a Domingo: 8 a.m. – 5 p.m.<br>
+                        (22)-2222-2222 ext 135
+                    </p>
+                </div>
+                <img src="./assets/ubicacion.png" alt="Ubicacion imagen">
+            </div>
+        </article>
+
+    </section>
+
+
+
+    <!---------footer de la pagina------->
+    <footer>
+        <h3>Made with <i class="uil uil-heart-sign"></i> cheesecake -</h3>
+    </footer>
+
+</body>
+</html>

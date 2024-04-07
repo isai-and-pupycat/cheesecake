@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@400;500;900&display=swap');
+
+body{
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    /* background-color: #d4a886; */
+    /*background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);*/
+}
+
+
+body::-webkit-scrollbar{
+    width: 10px;
+    background-color: #d4a886;
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: #111B1E;
+    border-radius: 5px;
+}
+
+
+/*-----------------Navbar-----------------*/
+
+header{
+    padding-right: 50px;
+    background-color: #111B1E;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 3px solid #d4a886;
+}
+
+header h2{
+    padding-left: 50px;
+    display: flex;
+    font-size: 2em;
+    color: #d4a886;
+}
+
+nav li{
+    float: left;
+    list-style: none;
+}
+
+nav a{
+    margin-top: none;
+    transition: all 0.3s ease;
+    display: block;
+    font-weight: 600;
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #d4a886;
+}
+
+nav a:hover{
+    border-radius: 5px;
+    background-color: #d4a886;
+    color: #111B1E;
+}
+
+
+
+/*------------------Dashboard-----------------*/
+
+section{
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: #111B1E;
+}
+
+section article{
+    width: 40%;
+    height: auto;
+    margin: 30px;
+    background-color: #d4a886;  
+    padding: 20px 30px 20px 30px;
+}
+
+section article h2{
+    border-bottom: 1px solid #111B1E;
+    padding-bottom: 10px;
+}
+
+
+
+/*------------Seccion stock pasteles-------------*/
+
+
+.pasteles{
+    width: 100%;
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#choco{
+    width: 30%;
+    overflow: hidden;
+    background-color: whitesmoke;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#choco img{
+    height: 130px;
+    width: 100%;
+}
+
+#choco h3{
+    text-align: center;
+    width: 90%;
+    padding: 10px 0px 10px 0px;
+    border-top: 2px solid #111B1E;
+    border-bottom: 2px solid #111B1E;
+}
+
+#vainilla{
+    margin: 0px 5px 0px 5px;
+    width: 30%;
+    overflow: hidden;
+    /* border-left: 1px solid #111B1E; */
+    background-color: whitesmoke;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#vainilla img{
+    height: 130px;
+    width: 100%;
+}
+
+#vainilla h3{
+    text-align: center;
+    width: 90%;
+    padding: 10px 0px 10px 0px;
+    border-top: 2px solid #111B1E;
+    border-bottom: 2px solid #111B1E;
+}
+
+#fresa{
+    width: 30%;
+    overflow: hidden;
+    background-color: whitesmoke;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#fresa img{
+    height: 130px;
+    width: 100%;
+}
+
+#fresa h3{
+    text-align: center;
+    width: 90%;
+    padding: 10px 0px 10px 0px;
+    border-top: 2px solid #111B1E;
+    border-bottom: 2px solid #111B1E;
+}
+
+
+
+/*-----------------Seccion de pedidos-----------------*/
+
+.pedidos-dash table{
+    width: 100%;
+    background-color: white;
+    padding: 10px;
+    border-collapse: collapse;
+}
+
+.pedidos-dash table td, th{
+    text-align: center;
+    border-left: 2px solid #111B1E;
+    border-right: 2px solid #111B1E;
+}
+
+
+
+/*-----------------Seccion stock adornos---------------*/
+
+.adornos{
+    width: 100%;
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#velas{
+    width: 30%;
+    overflow: hidden;
+    background-color: whitesmoke;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#velas img{
+    height: 130px;
+    width: 100%;
+}
+
+#velas h3{
+    text-align: center;
+    width: 90%;
+    padding: 10px 0px 10px 0px;
+    border-top: 2px solid #111B1E;
+    border-bottom: 2px solid #111B1E;
+}
+
+#muñecos{
+    margin: 0px 5px 0px 5px;
+    width: 30%;
+    overflow: hidden;
+    background-color: whitesmoke;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#muñecos img{
+    height: 130px;
+    width: 100%;
+}
+
+#muñecos h3{
+    text-align: center;
+    width: 90%;
+    padding: 10px 0px 10px 0px;
+    border-top: 2px solid #111B1E;
+    border-bottom: 2px solid #111B1E;
+}
+
+#impresion{
+    width: 30%;
+    overflow: hidden;
+    background-color: whitesmoke;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#impresion img{
+    height: 130px;
+    width: 100%;
+}
+
+#impresion h3{
+    text-align: center;
+    width: 90%;
+    padding: 10px 0px 10px 0px;
+    border-top: 2px solid #111B1E;
+    border-bottom: 2px solid #111B1E;
+}
+
+
+
+/*-------------------Seccion del balance---------------*/
+
+.balance-dash img{
+    width: 100%;
+}
+
